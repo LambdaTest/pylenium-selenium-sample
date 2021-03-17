@@ -1,0 +1,31 @@
+{
+  "driver": {
+    "remote_url": "https://username:accesskey@hub.lambdatest.com/wd/hub",
+    "wait_time": 10,
+    "page_load_wait_time": 0,
+    "options": [],
+	"browser": "ie",
+    "capabilities": {
+		"platform" : "Windows 8",
+		"build": "[Parallel Demo] Pylenium - Running ToDo App on LambdaTest Grid",
+		"name": "[Parallel Demo] Pylenium - Running ToDo App on LambdaTest Grid",
+		"version" : "10.0",
+		"ie.compatibility" : 11001
+	},
+    "experimental_options": null,
+    "extension_paths": [],
+    "local_path": ""
+  },
+
+  "logging":{
+    "screenshots_on": true,
+    "pylog_level": "info"
+  },
+
+  "viewport": {
+    "maximize": true,
+    "width": 1440,
+    "height": 900,
+    "orientation": "portrait"
+  }
+}
