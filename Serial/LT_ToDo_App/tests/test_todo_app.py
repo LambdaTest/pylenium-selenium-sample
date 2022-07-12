@@ -7,6 +7,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.keys import Keys
 from time import sleep
 
+
 def test_lambdatest_todo_app(py):
     py.visit('https://lambdatest.github.io/sample-todo-app/')
     py.maximize_window()
@@ -15,13 +16,14 @@ def test_lambdatest_todo_app(py):
     element_1 = py.get("ul.list-unstyled > li:nth-of-type(1) > [type='checkbox']")
     element_1.click()
 
-    # Get the instance of the current WebDriver and use the WebDriver commands like they are used in any test automation framework (e.g. PyTest)
-    # More information about webdriver at https://elsnoman.gitbook.io/pylenium/pylenium-commands/webdriver
+    # Get the instance of the current WebDriver and use the WebDriver commands like they are used in any test
+    # automation framework (e.g. PyTest) More information about webdriver at
+    # https://elsnoman.gitbook.io/pylenium/pylenium-commands/webdriver
     py.webdriver.find_element(By.NAME, "li2").click()
-    
+
     title = "Sample page - lambdatest.com"
     assert title == py.title()
- 
+
     sample_text = "Happy Testing at LambdaTest"
 
     # Locate the DOM element using the CSS Selector
@@ -34,7 +36,7 @@ def test_lambdatest_todo_app(py):
 
     # Note - find (https://elsnoman.gitbook.io/pylenium/pylenium-commands/find)
     # Note - findx (https://elsnoman.gitbook.io/pylenium/pylenium-commands/find_xpath)
- 
+
     elem_add_button = py.get(".btn")
     elem_add_button.click()
     sleep(5)
