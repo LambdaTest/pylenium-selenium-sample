@@ -6,12 +6,15 @@
     "options": [],
 	"browser": "ie",
     "capabilities": {
-		"platform" : "Windows 8",
-		"build": "[Parallel Demo] Pylenium - Running ToDo App on LambdaTest Grid",
-		"name": "[Parallel Demo] Pylenium - Running ToDo App on LambdaTest Grid",
-		"version" : "10.0",
-		"ie.compatibility" : 11001
-	},
+      "LT:Options": {
+        "platformName" : "Windows 8",
+        "build": "[Parallel Demo] Pylenium - Running ToDo App on LambdaTest Grid",
+        "name": "[Parallel Demo] Pylenium - Running ToDo App on LambdaTest Grid",
+        "ie.compatibility" : 11001
+      },
+    "browserName": "chrome",
+    "browserVersion" : "latest"
+    },
     "experimental_options": null,
     "extension_paths": [],
     "local_path": ""
