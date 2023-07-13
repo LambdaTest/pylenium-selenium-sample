@@ -27,14 +27,13 @@ import sys
 import pytest
 import requests
 from faker import Faker
-from reportportal_client import RPLogger, RPLogHandler
 
 from pylenium.driver import Pylenium
 from pylenium.config import PyleniumConfig, TestCase
 from pylenium.a11y import PyleniumAxe
 
 
-def make_dir(filepath) -> bool:
+def make_dir(filepath):
     """ Make a directory.
 
     Returns:
