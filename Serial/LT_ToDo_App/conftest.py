@@ -27,14 +27,13 @@ import sys
 import pytest
 import requests
 from faker import Faker
-from reportportal_client import RPLogger, RPLogHandler
 
 from pylenium.driver import Pylenium
 from pylenium.config import PyleniumConfig, TestCase
 from pylenium.a11y import PyleniumAxe
 
 
-def make_dir(filepath) -> bool:
+def make_dir(filepath):
     """ Make a directory.
 
     Returns:
@@ -48,7 +47,7 @@ def make_dir(filepath) -> bool:
 
 
 @pytest.fixture(scope='function')
-def fake() -> Faker:
+def fake():
     """ A basic instance of Faker to make test data."""
     return Faker()
 
@@ -82,7 +81,7 @@ def rp_logger(request):
 
 
 @pytest.fixture(scope='session', autouse=True)
-def project_root() -> str:
+def project_root():
     """ The Project (or Workspace) root as a filepath.
 
     * This conftest.py file should be in the Project Root if not already.
@@ -91,7 +90,7 @@ def project_root() -> str:
 
 
 @pytest.fixture(scope='session', autouse=True)
-def test_run(project_root, request) -> str:
+def test_run(project_root, request):
     """ Creates the `/test_results` directory to store the results of the Test Run.
 
     Returns:
