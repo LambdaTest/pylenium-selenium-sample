@@ -1,11 +1,6 @@
-import pytest
-import pylenium
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-import sys
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.common.keys import Keys
 from time import sleep
+
+from selenium.webdriver.common.by import By
 
 
 def test_lambdatest_todo_app(py):
@@ -32,7 +27,7 @@ def test_lambdatest_todo_app(py):
 
     # The submit method will submit the data but we submit the data by pressing the Add Button
     # elem_text_box.submit()
-    sleep(5)
+    # sleep(5)
 
     # Note - find (https://elsnoman.gitbook.io/pylenium/pylenium-commands/find)
     # Note - findx (https://elsnoman.gitbook.io/pylenium/pylenium-commands/find_xpath)
