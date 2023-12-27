@@ -4,24 +4,24 @@
     "wait_time": 10,
     "page_load_wait_time": 0,
     "options": [],
-	"browser": "ie",
+    "browser": "chrome",
     "capabilities": {
       "LT:Options": {
-        "platformName" : "Windows 8",
+        "platformName": "Windows 10",
         "build": "[Parallel Demo] Pylenium - Running ToDo App on LambdaTest Grid",
         "name": "[Parallel Demo] Pylenium - Running ToDo App on LambdaTest Grid",
-        "ie.compatibility" : 11001
+        "ie.compatibility": 11001
       },
-    "browserName": "chrome",
-    "browserVersion" : "latest"
+      "browserName": "chrome",
+      "browserVersion": "latest"
     },
     "experimental_options": null,
     "extension_paths": [],
     "local_path": ""
   },
 
-  "logging":{
-    "screenshots_on": true,
+  "logging": {
+    "screenshots_on": false,
     "pylog_level": "INFO"
   },
 
