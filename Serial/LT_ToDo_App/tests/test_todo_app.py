@@ -4,7 +4,7 @@ from selenium.webdriver.common.by import By
 
 
 def test_lambdatest_todo_app(py):
-    py.visit('https://lambdatest.github.io/sample-todo-app/')
+    py.visit("https://lambdatest.github.io/sample-todo-app/")
     py.maximize_window()
     # py.get uses the CSS Selector, hence we find the CSS Selector of the WebElement using Inspect Tool
     # More information about py.get at https://elsnoman.gitbook.io/pylenium/pylenium-commands/get
@@ -36,5 +36,5 @@ def test_lambdatest_todo_app(py):
     elem_add_button.click()
     sleep(5)
 
-    assert py.contains('Happy Testing at LambdaTest')
+    assert py.contains("Happy Testing at LambdaTest")
     print("Test of Sample ToDo app complete")
