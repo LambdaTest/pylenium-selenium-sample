@@ -20,7 +20,7 @@ def test_lambdatest_todo_app(py):
     # More information about webdriver at https://elsnoman.gitbook.io/pylenium/pylenium-commands/webdriver
     py.webdriver.find_element(By.NAME, "li2").click()
 
-    title = "Sample page - lambdatest.com"
+    title = "Modern To-Do App | LambdaTest"
     assert title == py.title()
 
     sample_text = "Happy Testing at LambdaTest"
@@ -36,7 +36,7 @@ def test_lambdatest_todo_app(py):
     # Note - find (https://elsnoman.gitbook.io/pylenium/pylenium-commands/find)
     # Note - findx (https://elsnoman.gitbook.io/pylenium/pylenium-commands/find_xpath)
 
-    elem_add_button = py.get(".btn")
+    elem_add_button = py.get("#addbutton")
     elem_add_button.click()
     sleep(5)
 
@@ -56,7 +56,7 @@ def test_lambdatest_todo_app_2(py):
     # More information about webdriver at https://elsnoman.gitbook.io/pylenium/pylenium-commands/webdriver
     py.webdriver.find_element(By.NAME, "li3").click()
 
-    title = "Sample page - lambdatest.com"
+    title = "Modern To-Do App | LambdaTest"
     assert title == py.title()
 
     sample_text = "Happy Testing at LambdaTest"
@@ -72,7 +72,7 @@ def test_lambdatest_todo_app_2(py):
     # Note - find (https://elsnoman.gitbook.io/pylenium/pylenium-commands/find)
     # Note - findx (https://elsnoman.gitbook.io/pylenium/pylenium-commands/find_xpath)
 
-    elem_add_button = py.get(".btn")
+    elem_add_button = py.get("#addbutton")
     elem_add_button.click()
     sleep(5)
 

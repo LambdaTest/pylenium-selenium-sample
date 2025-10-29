@@ -1,6 +1,6 @@
 {
   "driver": {
-    "remote_url": "https://userName:accesskey@hub.lambdatest.com/wd/hub",
+    "remote_url": "https://username:accesskey@hub.lambdatest.com/wd/hub",
     "wait_time": 10,
     "page_load_wait_time": 0,
     "options": [],
